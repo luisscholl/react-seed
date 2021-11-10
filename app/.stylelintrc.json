@@ -1,0 +1,19 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.scss"
+      ],
+      "customSyntax": "postcss-scss",
+      "rules": {
+        "selector-class-pattern": ".*",
+        "no-empty-source": null,
+        "keyframes-name-pattern": ".*"
+      }
+    }
+  ]
+}
